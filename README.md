@@ -1,5 +1,5 @@
 # ITI1120
-## This is a personal repository for homeworks and lab works in course ITI1120 of uOttawa.
+**This is a personal repository for homeworks and lab works in course ITI1120 of uOttawa.**
 ## **This repository does not grant any rights<sup>[1]</sup>**
 This means:
 * **You are not allowed distribute it for any reason**
