@@ -5,6 +5,8 @@ def longest_run(l: list):
         for j in range(i, l.__len__()):
             if l[i] == l[j]:
                 current += 1
+            else:
+                break
         if current > longest:
             longest = current
     return longest
@@ -12,8 +14,5 @@ def longest_run(l: list):
 
 usr_input = input(
     'Please input a list of numbers separated by space: ')
-if usr_input == '':
-    l = []
-else:
-    l = [float(i) for i in usr_input.split(' ')]
+l = [float(i) for i in usr_input.strip().split()]
 print(longest_run(l))
