@@ -1,7 +1,8 @@
 def code(s):
     secret = ''
     for i in range(0, len(s), 2):
-        secret += s[i + 1]
+        if len(s) != i + 1:
+            secret += s[i + 1]
         secret += s[i]
     return secret
 
