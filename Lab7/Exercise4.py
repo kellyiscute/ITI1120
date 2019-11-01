@@ -8,6 +8,7 @@ def move_zeros_v1(l):
             zeros += 1
 
     new.extend([0] * zeros)
+    return new
 
 
 def move_zeros_v2(l):
@@ -20,12 +21,14 @@ def move_zeros_v2(l):
         else:
             pos_counter += 1
         step_counter += 1
+    return l
 
 
 def move_zeros_v3(l):
     for i in range(len(l)):
         for j in range(i + 1, len(l)):
-            if l[i] < l[j]:
+            if l[i] == 0:
                 t = l[i]
                 l[i] = l[j]
                 l[j] = t
+    return l

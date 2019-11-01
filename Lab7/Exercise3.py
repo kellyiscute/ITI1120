@@ -12,3 +12,6 @@ def sum_of_three(x):
         if x[i] + x[i + 1] + x[i + 2] == 0:
             return True
     return False
+
+t = (1,2,-3,4,-1,3)
+print(sum_of_three(t))
