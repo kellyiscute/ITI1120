@@ -11,5 +11,21 @@ def product_matrixes(m, n):
     return result
 
 
+def enter_matrix():
+    m = []
+    t = []
+    while t.__len__() != 0 or m.__len__() == 0:
+        t = [int(i) for i in input(
+            'Enter next row, leave empty to end: ').strip().split()]
+        if t.__len__() != 0:
+            m.append(t)
+    return m
+
+
 if __name__ == "__main__":
-    print(product_matrixes([[1, 2, 3], [4, 5, 6]], [[1, 2], [3, 4], [5, 6]]))
+    print('Enter the first matrix')
+    m = enter_matrix()
+    print('Enter the second matrix')
+    n = enter_matrix()
+    print(product_matrixes(m, n))
+    # print(product_matrixes([[1, 2, 3], [4, 5, 6]], [[1, 2], [3, 4], [5, 6]]))

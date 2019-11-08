@@ -9,4 +9,11 @@ def transpose(l):
 
 
 if __name__ == "__main__":
-    print(transpose([[1, 2, 3], [4, 5, 6]]))
+    m = []
+    t = []
+    while t.__len__() != 0 or m.__len__() == 0:
+        t = [int(i) for i in input(
+            'Enter next row, leave empty to end: ').strip().split()]
+        if t.__len__() != 0:
+            m.append(t)
+    print(transpose(m))
