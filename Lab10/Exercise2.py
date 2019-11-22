@@ -1,6 +1,5 @@
 class Car(object):
-    def __init__(self, brand=
-    'Ford', color='red', pilot='person', speed=0.):
+    def __init__(self, brand='Ford', color='red', pilot='person', speed=0.):
         self.brand = brand
         self.color = color
         self.pilot = pilot
@@ -19,7 +18,7 @@ class Car(object):
         if self.pilot == 'person':
             print('This car does not have a driver !')
         else:
-            self.speed = flow * duration
+            self.speed += flow * duration
 
     def display_all(self):
         print(f'{self.color} {self.brand} driven by {self.pilot}, speed = {self.speed} m/s.')
