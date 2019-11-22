@@ -12,4 +12,3 @@ amount_owed %= 0.05
 coins += amount_owed // 0.01
 
 print('The minimum number of coins the cashier can return is:', int(coins))
-
